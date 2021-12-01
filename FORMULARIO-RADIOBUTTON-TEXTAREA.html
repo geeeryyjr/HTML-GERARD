@@ -1,0 +1,48 @@
+<html>
+<head><title>Ejemplo de formulario sencillo</title></head>
+<body>
+
+<h3>Formulario muy sencillo</h3>
+
+<form action="http://ptsv2.com/t/smx2m08/post" method="post">
+
+    <!--Aquí va un fieldset con nombre, apellido y DNI-->
+<fieldset style="width:50%"> 
+        <legend>Datos de la persona</legend>
+
+    <!--Nombre-->
+  <label for="nombre_id">Escribe tu nombre:</label>
+  <input type="text"  id="nombre_id" name="nombre" value="" />
+  <input type="hidden" name="nombre_secreto" value="nombre secreto" />
+  <br/>
+  Escribe tu apellido
+  <input type="text" name="apellido" value="" />
+  </br/>
+  Escribe tu DNI:
+  <input type="text" name="DNI" value="" />
+  <br/>
+</fieldset>
+    <!--Contraseña-->
+  Escribe la contraseña
+  <input type="password" name="contra" value="" />
+  <br/>
+  Puestos de trabajo buscados <br/>
+  <input name="puesto_directivo"  checked="checked" type="checkbox" value="direccion"/> Direccion
+  <input name="puesto_tecnico"   type="checkbox" value="tecnico"/> Tecnico
+  <input name="puesto_empleado"  type="checkbox" value="empleado"/> Empleado
+  <br/>
+
+  <!--Radio buttons-->
+  Selecciona coche de empresa <br/>
+  <input type="radio" name="coche" value="Mercedes" /> Mercedes
+  <input type="radio" name="coche" value="BMW" /> BMW
+  <input type="radio" name="coche" value="Dacia" checked="checked" /> Dacia
+  
+  <br/>
+  <input type="submit" value="Enviar" />
+</form>
+  <label for="descripcion">Descripcion del producto</label> <br/>
+  <textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+
+</body>
+</html>
