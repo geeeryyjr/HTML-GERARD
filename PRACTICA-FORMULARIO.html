@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">  
+    <head>
+     <style>
+         #bla{
+             background-color: orange;
+             color:black
+         }
+
+         #blo{
+             background-color: palegreen;
+             color:black
+         }
+
+         #blu{
+             background-color:palevioletred; 
+             color: black
+         }
+
+         #bli{
+             background-color: skyblue;
+             color:black
+         }
+
+         #ble{
+             background-color: grey;
+             color:black
+         }
+
+     </style>
+     </head>
+    <body>
+        <br/>
+        <meta charset="Curriculum">
+        <form action="curriculum.html" method="post">
+            <fieldset id="bla">
+                <legend><b><u>Informacion Basica</b></u></legend>
+                Nombre <br/>
+                <input type="text" name="nombre value=" />
+                <br/>
+
+        <form action="altura.html" method="post">
+                    <label for="nombre">Altura en centimetros</label> <br/>
+                <input type="number" id="nombre" name="nombre" value=""/>
+                <br/>
+                     <label for="nombre">email</label><br/>
+                     <input type="email" id="email" name="email" value=""/>
+                <br/>
+                     <label for="nombre">Fecha de nacimiento</label></br>
+                     <input type="datetime" id="descripcion" name="datetime" value=""/>
+            </fieldset>
+        </form>
+        <br/>
+        <form> 
+            <fieldset id="blo"> 
+                <legend><b><u>Nacionalidad</u></b></legend>
+                <input name="Española"   type="radio" value="Española"/> Espanola 
+                <input name="Comunitario"  checked="checked" type="radio" value="Comunitario"/> Comunitario(UE)
+                <input name="No comunitario"  type="radio" value="No comunitario"/> No comunitario
+                <br/>
+            </fieldset>
+        
+            <br/>
+        
+            <fieldset id="blu">
+                <legend><b><u>Estudios</u></b></legend>
+                <select id="so" name="so">
+                    <option value="selected"> GM </option>
+                    <option value="ESO"> ESO </option>
+                    <option value="Bachillerato"> Bachillerato </option>
+                </select>
+            </fieldset>
+        
+            <br/>
+             
+            <fieldset id="bli">
+                <legend><b><u>Idiomas</u></b></legend>
+                <input name="Francés"   checked="checked" type="checkbox" value="Catalan"/> Frances
+                <input name="Castellano"  checked="checked" type="checkbox" value="Castellano"/> Castellano
+                <input name="Italiano"  checked="checked" type="checkbox" value="Ingles"/> Italiano
+                <input name="Ruso"  type="checkbox" value="Chino"/> Ruso
+                <br/>
+            </fieldset>
+            <br/>
+
+            <fieldset id="ble"> 
+                <input type="submit" value="Enviar" />
+                <input type="submit" value="Cancelar" />
+            </fieldset>
+        </form>
+    </body> 
+    </head>
+</html>
